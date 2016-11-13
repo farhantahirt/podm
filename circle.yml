@@ -6,6 +6,12 @@ general:
    artifacts:
      - $CIRCLE_TEST_REPORTS
      - target
+
+dependencies:
+   pre:
+   - touch ~/podam && mvn install:install-file -DgroupId=org.eclipse.mylyn.github -DartifactId=org.eclipse.egit.github.core -Dversion=3.1.0.201310021548-r -Dpackaging=jar -Dfile=~/podam
+   
+   
      
 test:
   override:
