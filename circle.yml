@@ -9,8 +9,7 @@ general:
 
 dependencies:
    pre:
-   - touch ~/podam && mvn install:install-file -DgroupId=org.eclipse.mylyn.github -DartifactId=org.eclipse.egit.github.core -Dversion=3.1.0.201310021548-r -Dpackaging=jar -Dfile=~/podam
-   
+   - touch /home/ubuntu/podam && mvn install:install-file -DgroupId=org.eclipse.mylyn.github -DartifactId=org.eclipse.egit.github.core -Dversion=3.1.0.201310021548-r -Dpackaging=jar -Dfile=/home/ubuntu/podam
    
      
 test:
